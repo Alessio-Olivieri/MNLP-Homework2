@@ -1,0 +1,135 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{NLP HOMEWORK 2}
+\author{Giovanni Regina, Alessio Olivieri}
+
+\begin{document}
+\maketitle
+
+
+\section{Introduction}
+
+This work aims to automathic translate archaic italian into modern italian.
+To achieve this objective it has been used two different techniques:
+1. Fine tune a Large Language Model with a custom dataset built to give to the model the power to learn how to translate sentences from archaic italian into modern italian. 2. Fine tune a Transformer Based Machine Translation System with a custom dataset, with the same aim of the technique
+
+\section{Preliminar Assumptions}
+
+\subsection{Environment}
+All the experiments were made using the Kaggle platform and using the free hours of GPU usage that it gives to all users, with the possibility to change GPU types. The experiments of the section "Fine tune a Large Language Model" were run using two GPU T4, each one with 15GB of capacity, resulting in having a total of 30GB to load the model into them. All the necessaries libraries to run the code are installable directly into the various notebooks. 
+
+\subsection{Training Datasets}
+In the various notebooks there are used some external input files: 
+1. "Boccaccio": An excel file containing sentences from famous operas (Boccaccio's "Decameron" and "Il Filocolo") dated back to the same period of the dataset given for testing (1200 to 1400). These sentences have been manually translated with the competence of a person who has studied old italian for years to produce a "Gold Reference" translation for the fine tuning, so there are no translation errors in the training dataset. This dataset consists of 18 "big" sentences, selecting from the two Boccaccio's operas the sentences that were the most etherogeneus possible, with the scope to give the model the power to translate various archaic italian styles (since the testing dataset is made by sentences in various archaic styles). "Decameron" is a mixture of styles, since it is a collection of stories from people all around Italy, and having different "social levels". "Il Filocolo" instead has a more scientific style, since it talks about nature and it is Boccaccio talking, tones are more aulic and syntax is more correct, helping the model to better understand the syntax of archaic sentences. This dataset is adopted as training dataset in the section "Fine Tuning an LLM".
+2. "Dante": A csv file, containing the famous "Divine Comedy"
+This dataset is adopted as training dataset in the section "Fine tune a Transformer Based Machine Translation System"
+3. Test Dataset Augmmented: The test dataset augmented with the manual (human) "Golden Translation", for each testing sample. This dataset is adopted in the section "LLM as a judge" to give the model the "Reference Answers" needed as baseline for its judgment.
+4. Human Scores: The models' translations of the testing dataset manually annotated with the quality score of each model translation, for each testing sample, using the same metrics to assign a score as the "Score Rubrics" used in the section "LLM as a judge" to produce LLM based quality scores of the models' tranlsations. This dataset is adopted in the section "Agreement LLM with human scores".
+
+\section{Fine Tuning an LLM}
+The first techninque adopted to achieve the goal was to fine tune a medium sized LLM, using as training dataset "Boccaccio" and perform the translations with the In Context Learning technique.
+
+\subsection{Model Selection}
+The model selected for this scope is "Mixtral-8x7B-Instruct-v0.1": the Mistral 8x7B LLM fine tuned via SFT and DPO on istruction following. The choice of an Istruct model was made by different aspects: 1. The istruct models are more able to follow precisely the istructions given in the prompt, since the prompt for inference is augmented with the in-context learning technique and a detailed instruction. 2. Less data needed as training to have quality results: since the dataset "Boccaccio" is made only by 18 sentences, there is needed a model capable to learn "quicker" than the base models. 3. 
+
+\subsection{How to include Figures}
+
+First you have to upload the image file from your computer using the upload link in the file-tree menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{fig:frog} in this section for an example.
+
+Note that your figure will automatically be placed in the most appropriate place for it, given the surrounding text and taking into account other figures or tables that may be close by. You can find out more about adding images to your documents in this help article on \href{https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf}{including images on Overleaf}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.25\linewidth]{frog.jpg}
+\caption{\label{fig:frog}This frog was uploaded via the file-tree menu.}
+\end{figure}
+
+\subsection{How to add Tables}
+
+Use the table and tabular environments for basic tables --- see Table~\ref{tab:widgets}, for example. For more information, please see this help article on \href{https://www.overleaf.com/learn/latex/tables}{tables}.
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
+
+\subsection{How to add Comments and Track Changes}
+
+Comments can be added to your project by highlighting some text and clicking ``Add comment'' in the top right of the editor pane. To view existing comments, click on the Review menu in the toolbar above. To reply to a comment, click on the Reply button in the lower right corner of the comment. You can close the Review pane by clicking its name on the toolbar when you're done reviewing for the time being.
+
+Track changes are available on all our \href{https://www.overleaf.com/user/subscription/plans}{premium plans}, and can be toggled on or off using the option at the top of the Review pane. Track changes allow you to keep track of every change made to the document, along with the person making the change.
+
+\subsection{How to add Lists}
+
+You can make lists with automatic numbering \dots
+
+\begin{enumerate}
+\item Like this,
+\item and like this.
+\end{enumerate}
+\dots or bullet points \dots
+\begin{itemize}
+\item Like this,
+\item and like this.
+\end{itemize}
+
+\subsection{How to write Mathematics}
+
+\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+\[S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i\]
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+
+\subsection{How to change the margins and paper size}
+
+Usually the template you're using will have the page margins and paper size set correctly for that use-case. For example, if you're using a journal article template provided by the journal publisher, that template will be formatted according to their requirements. In these cases, it's best not to alter the margins directly.
+
+If however you're using a more general template, such as this one, and would like to alter the margins, a common way to do so is via the geometry package. You can find the geometry package loaded in the preamble at the top of this example file, and if you'd like to learn more about how to adjust the settings, please visit this help article on \href{https://www.overleaf.com/learn/latex/page_size_and_margins}{page size and margins}.
+
+\subsection{How to change the document language and spell check settings}
+
+Overleaf supports many different languages, including multiple different languages within one document.
+
+To configure the document language, simply edit the option provided to the babel package in the preamble at the top of this example project. To learn more about the different options, please visit this help article on \href{https://www.overleaf.com/learn/latex/International_language_support}{international language support}.
+
+To change the spell check language, simply open the Overleaf menu at the top left of the editor window, scroll down to the spell check setting, and adjust accordingly.
+
+\subsection{How to add Citations and a References List}
+
+You can simply upload a \verb|.bib| file containing your BibTeX entries, created with a tool such as JabRef. You can then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|. You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX.
+
+If you have an \href{https://www.overleaf.com/user/subscription/plans}{upgraded account}, you can also import your Mendeley or Zotero library directly as a \verb|.bib| file, via the upload menu in the file-tree.
+
+\subsection{Good luck!}
+
+We hope you find Overleaf useful, and do take a look at our \href{https://www.overleaf.com/learn}{help library} for more tutorials and user guides! Please also let us know if you have any feedback using the \textbf{Contact us} link at the bottom of the Overleaf menu --- or use the contact form at \url{https://www.overleaf.com/contact}.
+
+
+Once you're familiar with the editor, you can find various project settings in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
+
+
+
+
+\bibliographystyle{alpha}
+\bibliography{sample}
+
+\end{document}
