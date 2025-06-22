@@ -222,7 +222,7 @@ def evaluate(dataset):
             if 'bert_scorer' not in _MODEL_CACHE:
                 print("Loading BERTScore model...")
                 from bert_score import BERTScorer
-                _MODEL_CACHE['bert_scorer'] = BERTScorer(lang="it", model_tydataset["Sentence"].to_list(), dataset["TRADUZIONE ITALIANA"].to_list(), dataset["prediction"].to_list()pe='bert-base-multilingual-cased', device=device)
+                _MODEL_CACHE['bert_scorer'] = BERTScorer(lang="it", model_type='bert-base-multilingual-cased', device=device)
             _, _, F1 = _MODEL_CACHE['bert_scorer'].score(predicteds, golds, batch_size=16)
             results['BERTScore'] = F1.tolist() # <-- CHANGED: Store the list of scores
         except Exception as e:
