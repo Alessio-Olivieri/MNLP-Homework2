@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="697" viewBox="0 0 1060 697" role="img" aria-label="Automatic translation metrics">
+<title>Automatic translation metrics</title><desc>Reference-based scores (0–1 in the saved notebook output)</desc><rect width="1060" height="697" rx="18" fill="#ffffff"/>
+<rect x="1" y="1" width="1058" height="695" rx="17" fill="none" stroke="#E6EBF2" stroke-width="2"/>
+<text x="36" y="46" fill="#16243B" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">Automatic translation metrics</text>
+<text x="36" y="74" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="15">Reference-based scores (0–1 in the saved notebook output)</text>
+<rect x="265" y="99" width="13" height="13" rx="3" fill="#2563EB"/><text x="285" y="111" fill="#44546A" font-size="15" font-family="Arial, Helvetica, sans-serif">Mixtral 8×7B</text>
+<rect x="440" y="99" width="13" height="13" rx="3" fill="#D68B35"/><text x="460" y="111" fill="#44546A" font-size="15" font-family="Arial, Helvetica, sans-serif">OPUS-MT</text>
+<line x1="265" y1="135" x2="265" y2="626" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="265" y="649" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0</text>
+<line x1="401" y1="135" x2="401" y2="626" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="401" y="649" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0</text>
+<line x1="537" y1="135" x2="537" y2="626" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="537" y="649" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0</text>
+<line x1="673" y1="135" x2="673" y2="626" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="673" y="649" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">1</text>
+<line x1="809" y1="135" x2="809" y2="626" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="809" y="649" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">1</text>
+<line x1="945" y1="135" x2="945" y2="626" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="945" y="649" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">1</text>
+<text x="35" y="177" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">BLEU</text>
+<rect x="265" y="153" width="226.17" height="22" rx="4" fill="#2563EB"/>
+<text x="501.17" y="169" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.333</text>
+<rect x="265" y="182" width="151.84" height="22" rx="4" fill="#D68B35"/>
+<text x="426.84" y="198" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.223</text>
+<text x="35" y="268" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">chrF++</text>
+<rect x="265" y="244" width="391.82" height="22" rx="4" fill="#2563EB"/>
+<text x="666.82" y="260" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.576</text>
+<rect x="265" y="273" width="330.34" height="22" rx="4" fill="#D68B35"/>
+<text x="605.34" y="289" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.486</text>
+<text x="35" y="359" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">BERTScore</text>
+<rect x="265" y="335" width="583.51" height="22" rx="4" fill="#2563EB"/>
+<text x="858.51" y="351" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.858</text>
+<rect x="265" y="364" width="562.56" height="22" rx="4" fill="#D68B35"/>
+<text x="837.56" y="380" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.827</text>
+<text x="35" y="450" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">COMET-22</text>
+<rect x="265" y="426" width="542.03" height="22" rx="4" fill="#2563EB"/>
+<text x="817.03" y="442" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.797</text>
+<rect x="265" y="455" width="462.20" height="22" rx="4" fill="#D68B35"/>
+<text x="737.20" y="471" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.680</text>
+<text x="35" y="541" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">BLEURT</text>
+<rect x="265" y="517" width="464.24" height="22" rx="4" fill="#2563EB"/>
+<text x="739.24" y="533" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.683</text>
+<rect x="265" y="546" width="356.73" height="22" rx="4" fill="#D68B35"/>
+<text x="631.73" y="562" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.525</text>
+<text x="36" y="679" fill="#8590A1" font-family="Arial, Helvetica, sans-serif" font-size="13">BLEU and chrF++: corpus scores. BERTScore, COMET-22, BLEURT: sample means. Interpret metrics separately.</text>
+</svg>

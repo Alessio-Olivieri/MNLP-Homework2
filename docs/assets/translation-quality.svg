@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="515" viewBox="0 0 1060 515" role="img" aria-label="Translation quality">
+<title>Translation quality</title><desc>Overall 1–5 scores on 97 medieval Italian passages</desc><rect width="1060" height="515" rx="18" fill="#ffffff"/>
+<rect x="1" y="1" width="1058" height="513" rx="17" fill="none" stroke="#E6EBF2" stroke-width="2"/>
+<text x="36" y="46" fill="#16243B" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">Translation quality</text>
+<text x="36" y="74" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="15">Overall 1–5 scores on 97 medieval Italian passages</text>
+<rect x="265" y="99" width="13" height="13" rx="3" fill="#2563EB"/><text x="285" y="111" fill="#44546A" font-size="15" font-family="Arial, Helvetica, sans-serif">Mixtral 8×7B</text>
+<rect x="440" y="99" width="13" height="13" rx="3" fill="#D68B35"/><text x="460" y="111" fill="#44546A" font-size="15" font-family="Arial, Helvetica, sans-serif">OPUS-MT</text>
+<line x1="265" y1="135" x2="265" y2="444" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="265" y="467" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0</text>
+<line x1="401" y1="135" x2="401" y2="444" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="401" y="467" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">1</text>
+<line x1="537" y1="135" x2="537" y2="444" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="537" y="467" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">2</text>
+<line x1="673" y1="135" x2="673" y2="444" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="673" y="467" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">3</text>
+<line x1="809" y1="135" x2="809" y2="444" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="809" y="467" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">4</text>
+<line x1="945" y1="135" x2="945" y2="444" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="945" y="467" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">5</text>
+<text x="35" y="177" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Human evaluators</text>
+<rect x="265" y="153" width="475.29" height="22" rx="4" fill="#2563EB"/>
+<text x="750.29" y="169" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">3.495</text>
+<rect x="265" y="182" width="300.04" height="22" rx="4" fill="#D68B35"/>
+<text x="575.04" y="198" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">2.206</text>
+<text x="35" y="268" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Gemini 2.5 Flash</text>
+<rect x="265" y="244" width="448.66" height="22" rx="4" fill="#2563EB"/>
+<text x="723.66" y="260" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">3.299</text>
+<rect x="265" y="273" width="298.64" height="22" rx="4" fill="#D68B35"/>
+<text x="573.64" y="289" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">2.196</text>
+<text x="35" y="359" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">M-Prometheus 7B</text>
+<rect x="265" y="335" width="537.00" height="22" rx="4" fill="#2563EB"/>
+<text x="812.00" y="351" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">3.949</text>
+<rect x="265" y="364" width="469.69" height="22" rx="4" fill="#D68B35"/>
+<text x="744.69" y="380" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">3.454</text>
+<text x="36" y="497" fill="#8590A1" font-family="Arial, Helvetica, sans-serif" font-size="13">Higher = better. Values reproduced from the Prometheus.ipynb evaluation summary.</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="424" viewBox="0 0 1060 424" role="img" aria-label="Agreement with human ratings">
+<title>Agreement with human ratings</title><desc>Quadratic-weighted Cohen’s kappa for overall translation quality</desc><rect width="1060" height="424" rx="18" fill="#ffffff"/>
+<rect x="1" y="1" width="1058" height="422" rx="17" fill="none" stroke="#E6EBF2" stroke-width="2"/>
+<text x="36" y="46" fill="#16243B" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">Agreement with human ratings</text>
+<text x="36" y="74" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="15">Quadratic-weighted Cohen’s kappa for overall translation quality</text>
+<rect x="265" y="99" width="13" height="13" rx="3" fill="#2563EB"/><text x="285" y="111" fill="#44546A" font-size="15" font-family="Arial, Helvetica, sans-serif">Mixtral 8×7B</text>
+<rect x="440" y="99" width="13" height="13" rx="3" fill="#D68B35"/><text x="460" y="111" fill="#44546A" font-size="15" font-family="Arial, Helvetica, sans-serif">OPUS-MT</text>
+<line x1="265" y1="135" x2="265" y2="353" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="265" y="376" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0.0</text>
+<line x1="401" y1="135" x2="401" y2="353" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="401" y="376" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0.1</text>
+<line x1="537" y1="135" x2="537" y2="353" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="537" y="376" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0.2</text>
+<line x1="673" y1="135" x2="673" y2="353" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="673" y="376" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0.3</text>
+<line x1="809" y1="135" x2="809" y2="353" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="809" y="376" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0.4</text>
+<line x1="945" y1="135" x2="945" y2="353" stroke="#E9EDF3" stroke-width="1.2"/>
+<text x="945" y="376" text-anchor="middle" fill="#758195" font-size="13" font-family="Arial, Helvetica, sans-serif">0.5</text>
+<text x="35" y="177" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Gemini 2.5 Flash</text>
+<rect x="265" y="153" width="607.51" height="22" rx="4" fill="#2563EB"/>
+<text x="882.51" y="169" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.447</text>
+<rect x="265" y="182" width="605.74" height="22" rx="4" fill="#D68B35"/>
+<text x="880.74" y="198" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.445</text>
+<text x="35" y="268" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">M-Prometheus 7B</text>
+<rect x="265" y="244" width="219.50" height="22" rx="4" fill="#2563EB"/>
+<text x="494.50" y="260" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.161</text>
+<rect x="265" y="273" width="45.15" height="22" rx="4" fill="#D68B35"/>
+<text x="320.15" y="289" fill="#27364A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">0.033</text>
+<text x="36" y="406" fill="#8590A1" font-family="Arial, Helvetica, sans-serif" font-size="13">Higher = stronger agreement beyond chance. Average score similarity is not agreement.</text>
+</svg>
