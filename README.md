@@ -7,7 +7,7 @@ This project studies how well neural language models can turn **medieval/archaic
 
 > **Main finding:** Mixtral achieved **3.49/5** in human-rated overall translation quality, compared with **2.21/5** for OPUS-MT, across **97 evaluated passages**. However, automated judges did not always agree with people—especially M-Prometheus on overall ratings.
 
-[**Results**](#results) · [**Models**](#two-translation-approaches) · [**Evaluation**](#how-we-evaluated-translations) · [**Reproducing the notebooks**](#running-the-project) · [**Original report**](main.tex)
+[**Results**](#results) · [**Models**](#two-translation-approaches) · [**Evaluation**](#how-we-evaluated-translations) · [**Reproducing the notebooks**](#running-the-project) · [**Full report (PDF)**](docs/MNLP_presentation.pdf) · [**LaTeX draft**](main.tex)
 
 ## The task
 
@@ -120,10 +120,17 @@ The scoring experiments and saved results are in [`Prometheus.ipynb`](Prometheus
 ├── evaluator.py               # Prometheus judging and translation metrics
 ├── data/                      # Inputs, translated samples, annotated results
 ├── delivery/                  # Submitted JSONL predictions and judgments
+├── docs/MNLP_presentation.pdf  # Full report: methodology, loss plot, evaluation table, rubrics
 ├── docs/assets/               # Charts generated from recorded results
 ├── main.tex                   # Project write-up (LaTeX)
 └── NLP_Homework_2.pdf         # Homework specification
 ```
+
+## Full project report
+
+📄 **[Read the complete 5-page project report (PDF)](docs/MNLP_presentation.pdf)**
+
+The report complements the notebooks and README with an OPUS-MT training/validation-loss plot, a consolidated evaluation table (including score variances and inter-rater agreement), experimental methodology, and the exact evaluation prompts and scoring rubrics.
 
 ## Running the project
 
@@ -155,4 +162,4 @@ For simply **exploring the original results**, training is unnecessary: the scor
 
 University project for **Multilingual Natural Language Processing (MNLP), Homework 2**.
 
-The original study description is in [`main.tex`](main.tex); the assignment brief is [`NLP_Homework_2.pdf`](NLP_Homework_2.pdf). Figures in this README are generated from the numeric outputs already stored in the repository—not from new model runs.
+The [complete project report](docs/MNLP_presentation.pdf) documents the experiments, tables, loss plot, and scoring rubrics; [`main.tex`](main.tex) contains an earlier LaTeX write-up. The assignment brief is [`NLP_Homework_2.pdf`](NLP_Homework_2.pdf). Figures in this README are generated from the numeric outputs already stored in the repository—not from new model runs.
